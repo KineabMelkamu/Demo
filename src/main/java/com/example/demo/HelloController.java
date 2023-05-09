@@ -60,7 +60,7 @@ public class HelloController implements Initializable {
 
         if(path != null){
             if(mediaPlayerTets != null){
-                mediaPlayerTets.stop();
+                mediaPlayerTets.dispose();
                 maybework.setVisible(false);
             }
             Media daMedia = new Media(path);
